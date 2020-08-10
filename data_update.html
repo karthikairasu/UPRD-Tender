@@ -96,6 +96,32 @@
     .sub_T td, .sub_T th {
       border: 1px solid #c3c3c3;
     }
+    .bg_gray{
+      background-color: #d2d4d5!important;
+      color: #000!important;
+    }
+  /*----------------------------------
+   date picker
+   -----------------------------------*/
+    .gj-textbox-md {
+      border: 1px solid rgba(0,0,0,.42)!important;
+      display: block;
+      font-family: Helvetica,Arial,sans-serif;
+      font-size: 16px;
+      line-height: 16px;
+      padding: 4px 8px!important;
+      margin: 0;
+      width: 100%;
+      background: 0 0;
+      text-align: left;
+      color: rgba(0,0,0,.87);
+    }
+    .gj-datepicker-md [role=right-icon] {
+          position: absolute;
+          right: 5px!important;
+          top: 5px!important;
+          font-size: 24px;
+      }
   </style>
 </head>
 <body class="bg_lightgray">
@@ -105,7 +131,7 @@
       <a class="navbar-brand m-0 p-0" data-aos="zoom-in" href="#"><img class="" src="assets/images/logo.png" style="height: 48px;width: auto"></a>
     </div>
     <div class="col-md-6 col-6 px-0 px-sm-3 logo_center text-trucate">
-      <h3 class="fw-800">Advanced Shipping Notification Portal</h3>
+      <h3 class="fw-800">Nupco Update form</h3>
     </div>
     <div class="col-md-3 col-3 px-0 px-sm-3 logo_right">
       <a class="navbar-brand mr-0 ml-3 p-0" data-aos="zoom-in" href="#"><img class="" src="assets/images/Capture1.jpg" style="height: 48px;width: auto"></a>
@@ -120,145 +146,96 @@
           <table class="table table-bordered sub_T">
             <thead>
               <tr class="table-active head_1">
-                <th>Item #</th>
-                <th>Material Number</th>
-                <th>File Name</th>
-                <th>Page from</th>
-                <th>Page to</th>
-                <th>View</th>
-                <th>Action</th>
-                <th>Status</th>
+                <th>S.NO</th>
+                <th>Task</th>
+                <th class="bg_gray">Date</th>
+                <th class="bg_gray">Total</th>
+                <th class="bg_gray">Action</th>
+                <th class="bg_gray">Last Edited</th>
               </tr>
             </thead>
             <tbody>
               <tr class="">
                 <td>1</td>
-                <td>123</td>
-                <td>xzxz</td>
-                <td>1</td>
-                <td>2</td>
-                <td><button class="btn btn-primary btn-sm" type="submit">validate</button></td>
-                <td>
-                  <span class="badge badge-success"><i class="fas fa-check"></i></span>
-                </td>
-                <td><b>001.pdf</b></td>
+                <td>Nupco select date and enter input</td>
+                <td><input type="" class="form-control" id="datepicker" name=""></td>
+                <td><input type="number" class="form-control w-50 d-inline" name=""></td>
+                <td><button class="btn btn-info btn-sm" type="submit">Save</button></td>
+                <td>13/08/2020</td>
               </tr>
               <tr class="">
                 <td>1</td>
-                <td>123</td>
-                <td>xzxz</td>
-                <td>1</td>
-                <td>2</td>
-                <td><button class="btn btn-primary btn-sm" type="submit">validate</button></td>
-                <td>
-                  <span class="badge badge-success"><i class="fas fa-check"></i></span>
-                </td>
-                <td><b>001.pdf</b></td>
+                <td>Nupco select date and enter input</td>
+                <td><input type="" class="form-control" id="datepicker" name=""></td>
+                <td><input type="number" class="form-control w-50 d-inline" name=""></td>
+                <td><button class="btn btn-info btn-sm" type="submit">Save</button></td>
+                <td>13/08/2020</td>
               </tr>
               <tr class="">
                 <td>1</td>
-                <td>123</td>
-                <td>xzxz</td>
-                <td>1</td>
-                <td>2</td>
-                <td><button class="btn btn-primary btn-sm" type="submit">validate</button></td>
-                <td>
-                  <span class="badge badge-success"><i class="fas fa-check"></i></span>&ensp;
-                  <span class="badge badge-danger"><i class="fas fa-times"></i></span>
-                </td>
-                <td><b>N/A</b></td>
+                <td>Nupco select date and enter input</td>
+                <td><input type="" class="form-control" id="datepicker" name=""></td>
+                <td><input type="number" class="form-control w-50 d-inline" name=""></td>
+                <td><button class="btn btn-info btn-sm" type="submit">Save</button></td>
+                <td>13/08/2020</td>
               </tr>
               <tr class="">
                 <td>1</td>
-                <td>123</td>
-                <td>xzxz</td>
-                <td>1</td>
-                <td>2</td>
-                <td><button class="btn btn-primary btn-sm" type="submit">validate</button></td>
-                <td>
-                  <span class="badge badge-success"><i class="fas fa-check"></i></span>&ensp;
-                  <span class="badge badge-danger"><i class="fas fa-times"></i></span>
-                </td>
-                <td><b>N/A</b></td>
+                <td>Nupco select date and enter input</td>
+                <td><input type="" class="form-control" id="datepicker" name=""></td>
+                <td><input type="number" class="form-control w-50 d-inline" name=""></td>
+                <td><button class="btn btn-info btn-sm" type="submit">Save</button></td>
+                <td>13/08/2020</td>
               </tr>
               <tr class="">
                 <td>1</td>
-                <td>123</td>
-                <td>xzxz</td>
-                <td>1</td>
-                <td>2</td>
-                <td><button class="btn btn-primary btn-sm" type="submit">validate</button></td>
-                <td>
-                  <span class="badge badge-success"><i class="fas fa-check"></i></span>&ensp;
-                  <span class="badge badge-danger"><i class="fas fa-times"></i></span>
-                </td>
-                <td><b>N/A</b></td>
+                <td>Nupco select date and enter input</td>
+                <td><input type="" class="form-control" id="datepicker" name=""></td>
+                <td><input type="number" class="form-control w-50 d-inline" name=""></td>
+                <td><button class="btn btn-info btn-sm" type="submit">Save</button></td>
+                <td>13/08/2020</td>
               </tr>
               <tr class="">
                 <td>1</td>
-                <td>123</td>
-                <td>xzxz</td>
-                <td>1</td>
-                <td>2</td>
-                <td><button class="btn btn-primary btn-sm" type="submit">validate</button></td>
-                <td>
-                  <span class="badge badge-success"><i class="fas fa-check"></i></span>&ensp;
-                  <span class="badge badge-danger"><i class="fas fa-times"></i></span>
-                </td>
-                <td><b>N/A</b></td>
+                <td>Nupco select date and enter input</td>
+                <td><input type="" class="form-control" id="datepicker" name=""></td>
+                <td><input type="number" class="form-control w-50 d-inline" name=""></td>
+                <td><button class="btn btn-info btn-sm" type="submit">Save</button></td>
+                <td>13/08/2020</td>
               </tr>
               <tr class="">
                 <td>1</td>
-                <td>123</td>
-                <td>xzxz</td>
-                <td>1</td>
-                <td>2</td>
-                <td><button class="btn btn-primary btn-sm" type="submit">validate</button></td>
-                <td>
-                  <span class="badge badge-success"><i class="fas fa-check"></i></span>&ensp;
-                  <span class="badge badge-danger"><i class="fas fa-times"></i></span>
-                </td>
-                <td><b>N/A</b></td>
+                <td>Nupco select date and enter input</td>
+                <td><input type="" class="form-control" id="datepicker" name=""></td>
+                <td><input type="number" class="form-control w-50 d-inline" name=""></td>
+                <td><button class="btn btn-info btn-sm" type="submit">Save</button></td>
+                <td>13/08/2020</td>
               </tr>
               <tr class="">
                 <td>1</td>
-                <td>123</td>
-                <td>xzxz</td>
-                <td>1</td>
-                <td>2</td>
-                <td><button class="btn btn-primary btn-sm" type="submit">validate</button></td>
-                <td>
-                  <span class="badge badge-success"><i class="fas fa-check"></i></span>&ensp;
-                  <span class="badge badge-danger"><i class="fas fa-times"></i></span>
-                </td>
-                <td><b>N/A</b></td>
+                <td>Nupco select date and enter input</td>
+                <td><input type="" class="form-control" id="datepicker" name=""></td>
+                <td><input type="number" class="form-control w-50 d-inline" name=""></td>
+                <td><button class="btn btn-info btn-sm" type="submit">Save</button></td>
+                <td>13/08/2020</td>
               </tr>
               <tr class="">
                 <td>1</td>
-                <td>123</td>
-                <td>xzxz</td>
-                <td>1</td>
-                <td>2</td>
-                <td><button class="btn btn-primary btn-sm" type="submit">validate</button></td>
-                <td>
-                  <span class="badge badge-success"><i class="fas fa-check"></i></span>&ensp;
-                  <span class="badge badge-danger"><i class="fas fa-times"></i></span>
-                </td>
-                <td><b>N/A</b></td>
+                <td>Nupco select date and enter input</td>
+                <td><input type="" class="form-control" id="datepicker" name=""></td>
+                <td><input type="number" class="form-control w-50 d-inline" name=""></td>
+                <td><button class="btn btn-info btn-sm" type="submit">Save</button></td>
+                <td>13/08/2020</td>
               </tr>
               <tr class="">
                 <td>1</td>
-                <td>123</td>
-                <td>xzxz</td>
-                <td>1</td>
-                <td>2</td>
-                <td><button class="btn btn-primary btn-sm" type="submit">validate</button></td>
-                <td>
-                  <span class="badge badge-success"><i class="fas fa-check"></i></span>&ensp;
-                  <span class="badge badge-danger"><i class="fas fa-times"></i></span>
-                </td>
-                <td><b>N/A</b></td>
+                <td>Nupco select date and enter input</td>
+                <td><input type="" class="form-control" id="datepicker" name=""></td>
+                <td><input type="number" class="form-control w-50 d-inline" name=""></td>
+                <td><button class="btn btn-info btn-sm" type="submit">Save</button></td>
+                <td>13/08/2020</td>
               </tr>
+              
             </tbody>
           </table>
         </div>
@@ -286,6 +263,9 @@
   <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/venobox/1.9.0/venobox.min.js"></script>
   <!-- owl carousel script files -->
   <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+  <!-- date picker -->
+  <script src="https://unpkg.com/gijgo@1.9.13/js/gijgo.min.js" type="text/javascript"></script>
+  <link href="https://unpkg.com/gijgo@1.9.13/css/gijgo.min.css" rel="stylesheet" type="text/css" />
   <script type="text/javascript">
     // Preloader
     $(window).on('load', function() {
@@ -295,48 +275,10 @@
         });
       }
     });
-    // Gallery carousel (uses the Owl Carousel library)
-    $(".gallery-carousel").owlCarousel({
-      autoplay: true,
-      dots: true,
-      loop: true,
-      center: true,
-      responsive: {
-        0: {
-          items: 1
-        },
-        768: {
-          items: 3
-        },
-        992: {
-          items: 4
-        },
-        1200: {
-          items: 5
-        }
-      }
-    });
-   // Init AOS
-    function aos_init() {
-      AOS.init({
-        duration: 1000,
-        once: true
-      });
-    }
-    $(window).on('load', function() {
-      aos_init();
-    });
-   // Initiate venobox lightbox
-    $(document).ready(function() {
-      $('.venobox').venobox();
-    });
-  </script>
-    <script type="text/javascript">
-      $(document).ready(function () {
-          $('#sidebarCollapse').on('click', function () {
-              $('#sidebar').toggleClass('active');
-          });
-      });
+     $('#datepicker').datepicker({
+            uiLibrary: 'bootstrap 4',
+            format:'dd/mm/yyyy'
+        });
   </script>
 </body>
 </html>
