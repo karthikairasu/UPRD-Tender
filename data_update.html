@@ -127,13 +127,13 @@
 <header>
   <nav class="navbar navbar-expand-md fixed-top navbar-dark bg-white">
     <div class="col-md-3 col-3 px-0 px-sm-3 logo_left">
-      <a class="navbar-brand m-0 p-0" href="#"><img class="" src="assets/images/logo.png" style="height: 48px;width: auto"></a>
+      <a class="navbar-brand m-0 p-0" data-aos="zoom-in" href="#"><img class="" src="assets/images/logo.png" style="height: 48px;width: auto"></a>
     </div>
     <div class="col-md-6 col-6 px-0 px-sm-3 logo_center text-trucate">
       <h3 class="fw-800">Nupco Update form</h3>
     </div>
     <div class="col-md-3 col-3 px-0 px-sm-3 logo_right">
-      <a class="navbar-brand mr-0 ml-3 p-0" href="#"><img class="" src="assets/images/Capture1.jpg" style="height: 48px;width: auto"></a>
+      <a class="navbar-brand mr-0 ml-3 p-0" data-aos="zoom-in" href="#"><img class="" src="assets/images/Capture1.jpg" style="height: 48px;width: auto"></a>
     </div>
   </nav> 
 </header>
@@ -273,6 +273,16 @@
           $(this).remove();
         });
       }
+    });
+    // Init AOS
+    function aos_init() {
+      AOS.init({
+        duration: 1000,
+        once: true
+      });
+    }
+    $(window).on('load', function() {
+      aos_init();
     });
      $('#datepicker').datepicker({
             uiLibrary: 'bootstrap 4',
