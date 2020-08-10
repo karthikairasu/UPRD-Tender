@@ -157,7 +157,7 @@
               <tr class="">
                 <td>1</td>
                 <td>Nupco select date and enter input</td>
-                <td><input type="" class="form-control" id="datepicker" name=""></td>
+                <td><input type="" class="form-control datepicker" id="datepicker" name=""></td>
                 <td><input type="number" class="form-control w-50 d-inline" name=""></td>
                 <td><button class="btn btn-info btn-sm" type="submit">Save</button></td>
                 <td>13/08/2020</td>
@@ -165,7 +165,7 @@
               <tr class="">
                 <td>1</td>
                 <td>Nupco select date and enter input</td>
-                <td><input type="" class="form-control" id="datepicker" name=""></td>
+                <td><input type="" class="form-control datepicker" id="datepicker" name=""></td>
                 <td><input type="number" class="form-control w-50 d-inline" name=""></td>
                 <td><button class="btn btn-info btn-sm" type="submit">Save</button></td>
                 <td>13/08/2020</td>
@@ -173,7 +173,7 @@
               <tr class="">
                 <td>1</td>
                 <td>Nupco select date and enter input</td>
-                <td><input type="" class="form-control" id="datepicker" name=""></td>
+                <td><input type="" class="form-control datepicker" id="datepicker" name=""></td>
                 <td><input type="number" class="form-control w-50 d-inline" name=""></td>
                 <td><button class="btn btn-info btn-sm" type="submit">Save</button></td>
                 <td>13/08/2020</td>
@@ -181,7 +181,7 @@
               <tr class="">
                 <td>1</td>
                 <td>Nupco select date and enter input</td>
-                <td><input type="" class="form-control" id="datepicker" name=""></td>
+                <td><input type="" class="form-control datepicker" id="datepicker" name=""></td>
                 <td><input type="number" class="form-control w-50 d-inline" name=""></td>
                 <td><button class="btn btn-info btn-sm" type="submit">Save</button></td>
                 <td>13/08/2020</td>
@@ -189,7 +189,7 @@
               <tr class="">
                 <td>1</td>
                 <td>Nupco select date and enter input</td>
-                <td><input type="" class="form-control" id="datepicker" name=""></td>
+                <td><input type="" class="form-control datepicker" id="datepicker" name=""></td>
                 <td><input type="number" class="form-control w-50 d-inline" name=""></td>
                 <td><button class="btn btn-info btn-sm" type="submit">Save</button></td>
                 <td>13/08/2020</td>
@@ -197,7 +197,7 @@
               <tr class="">
                 <td>1</td>
                 <td>Nupco select date and enter input</td>
-                <td><input type="" class="form-control" id="datepicker" name=""></td>
+                <td><input type="" class="form-control datepicker" id="datepicker" name=""></td>
                 <td><input type="number" class="form-control w-50 d-inline" name=""></td>
                 <td><button class="btn btn-info btn-sm" type="submit">Save</button></td>
                 <td>13/08/2020</td>
@@ -205,7 +205,7 @@
               <tr class="">
                 <td>1</td>
                 <td>Nupco select date and enter input</td>
-                <td><input type="" class="form-control" id="datepicker" name=""></td>
+                <td><input type="" class="form-control datepicker" id="datepicker" name=""></td>
                 <td><input type="number" class="form-control w-50 d-inline" name=""></td>
                 <td><button class="btn btn-info btn-sm" type="submit">Save</button></td>
                 <td>13/08/2020</td>
@@ -213,7 +213,7 @@
               <tr class="">
                 <td>1</td>
                 <td>Nupco select date and enter input</td>
-                <td><input type="" class="form-control" id="datepicker" name=""></td>
+                <td><input type="" class="form-control datepicker" id="datepicker" name=""></td>
                 <td><input type="number" class="form-control w-50 d-inline" name=""></td>
                 <td><button class="btn btn-info btn-sm" type="submit">Save</button></td>
                 <td>13/08/2020</td>
@@ -221,7 +221,7 @@
               <tr class="">
                 <td>1</td>
                 <td>Nupco select date and enter input</td>
-                <td><input type="" class="form-control" id="datepicker" name=""></td>
+                <td><input type="" class="form-control datepicker" id="datepicker" name=""></td>
                 <td><input type="number" class="form-control w-50 d-inline" name=""></td>
                 <td><button class="btn btn-info btn-sm" type="submit">Save</button></td>
                 <td>13/08/2020</td>
@@ -229,7 +229,7 @@
               <tr class="">
                 <td>1</td>
                 <td>Nupco select date and enter input</td>
-                <td><input type="" class="form-control" id="datepicker" name=""></td>
+                <td><input type="" class="form-control datepicker" id="datepicker" name=""></td>
                 <td><input type="number" class="form-control w-50 d-inline" name=""></td>
                 <td><button class="btn btn-info btn-sm" type="submit">Save</button></td>
                 <td>13/08/2020</td>
@@ -284,9 +284,11 @@
     $(window).on('load', function() {
       aos_init();
     });
-     $('#datepicker').datepicker({
+     $('.datepicker').each(function(){
+      $(this).datepicker({
             uiLibrary: 'bootstrap 4',
             format:'dd/mm/yyyy'
+            });
         });
   </script>
 </body>
