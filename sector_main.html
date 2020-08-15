@@ -28,77 +28,61 @@
   <link href="https://cdnjs.cloudflare.com/ajax/libs/venobox/1.9.0/venobox.css" rel="stylesheet">
   <!-- owl carousel Style files -->
   <link href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" rel="stylesheet">
-
-  <link rel="stylesheet" type="text/css" href="assets/lib/style.css">
+  
   <style type="text/css">
-    .logo_left{
-      text-align: left;
-    }
-    .logo_center{
-      text-align: center;
-    }
-    .logo_right{
-      text-align: right;
-    }
-
-    @media (max-width: 767.98px){
-     .logo_left{
-      text-align: center;
-    }
-    .logo_left img{
-      height: 28px!important;
-      width: auto;
-    }
-    .logo_center h3{
-      text-align: center;
-      font-size: 16px;
-    }
-    .logo_right{
-      text-align: center;
-    } 
-    .logo_right img{
-      height: 28px!important;
-      width: auto;
-    } 
-    }
-   /*----------------------------------
-   table style
-   -----------------------------------*/
-   .res_mainT{
-    padding: .10rem .45rem;
-    height: 80vh;
-    border: 2px solid #1e2547;
-   }
-   .sub_T{
-    margin-bottom: 0px;
-   }
-   .res_mainT .sub_T td, .res_mainT .sub_T th {
-      padding: .55rem;
-      vertical-align: middle;
-      border-top: 1px solid #dee2e6;
-      text-align: center;
-      white-space: nowrap;
-    }
-    .sub_T thead tr:nth-child(1) th {
-        position: sticky;
-        top: 0px;
-        z-index: 999;
-        outline: 1px solid #8e8c8c;
-        font-size: 13px;
-        box-shadow: 0px -3px 4px 4px #8e8e8e;
-        font-weight: 600;
-        color: #fff;
-    }
-    .sub_T .head_1 th{
-      background-color: rgb(29 94 202);
-    }
-    .sub_T td, .sub_T th {
-      border: 1px solid #c3c3c3;
-    }
     .bg_gray{
       background-color: #d2d4d5!important;
       color: #000!important;
     }
+    .bg_lightgray{
+      background: #F5F7F8; 
+    }
+    /*--------------------------------------------------------------
+# Preloader
+--------------------------------------------------------------*/
+#preloader {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 9999;
+  overflow: hidden;
+  background: #fff;
+}
+
+#preloader:before {
+  content: "";
+  position: fixed;
+  top: calc(50% - 30px);
+  left: calc(50% - 30px);
+  border: 6px solid #3fbbc0;
+  border-top-color: #ecf8f9;
+  border-radius: 50%;
+  width: 60px;
+  height: 60px;
+  -webkit-animation: animate-preloader 1s linear infinite;
+  animation: animate-preloader 1s linear infinite;
+}
+
+@-webkit-keyframes animate-preloader {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes animate-preloader {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
   /*----------------------------------
    main
    -----------------------------------*/
@@ -117,6 +101,9 @@
       transform: scale(0.95);
       border: 1px dashed;
     }
+    .sd{
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+ }
   </style>
 </head>
 <body class="bg_lightgray">
